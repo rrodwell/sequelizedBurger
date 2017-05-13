@@ -1,0 +1,56 @@
+body{
+    background-image: url("../img/burgers.png");
+}
+
+.jumbotron {
+    color: #a22f30;
+    opacity: 0.95;
+}
+
+.jumbotron h1{
+    font-size: 100px;
+}
+
+#textarea{
+    float: none;
+    margin: 20px auto;
+    width: 30%;
+    opacity: 0.95;
+}
+
+#submit{
+    margin-bottom: 10px;
+}
+
+h4{
+    color: white;
+}
+
+.newBurger{
+    float: left;
+    width: 45%;
+}
+
+.devoured{
+    float: right;
+    width: 45%;
+}
+
+.newItem{
+    background-color: whitesmoke;
+    opacity: 0.95;
+    border: solid;
+    border-bottom-width: medium;
+    border-color: #00b359;
+}
+
+.devouredItem{
+    background-color: whitesmoke;
+    opacity: 0.95;
+    border: solid;
+    border-bottom-width: medium;
+    border-color: #9ea3ae;
+}
+
+
+
