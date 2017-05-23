@@ -1,8 +1,9 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var methodOverride = require("method-override");
+var db = require("./models");
 
-var PORT = process.env.PORT || 8080;
+var PORT = process.env.NODE_ENV || 3000;
 
 var app = express();
 
@@ -27,7 +28,11 @@ app.use("/update", routes);
 app.use("/create", routes);
 
 // LISTENER
-app.listen(PORT, function() {
-    console.log("App listening on PORT: " + PORT);
+db.sequelize.sync().then(function(){
+    app.listen(PORT, function() {
+        console.log("App listening on PORT: " + PORT);
+    });
 });
+
+
 
